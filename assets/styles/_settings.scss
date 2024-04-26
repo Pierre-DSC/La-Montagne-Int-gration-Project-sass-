@@ -62,7 +62,7 @@ body{
     background: none;
     border: 2px solid $black1;
     height: 45px;
-    width: 75px;
+    padding: 0 30px;
     font-size: 0.75rem;
     cursor: pointer;
     @include title;
