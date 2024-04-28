@@ -20,7 +20,8 @@ li {
   list-style: none;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: rgb(243, 243, 243);
 }
 
@@ -106,6 +107,7 @@ header .header-content span {
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 header nav {
   display: flex;
@@ -221,14 +223,7 @@ main .section1 .btn {
 main .section2 {
   display: flex;
   position: relative;
-}
-main .section2::before {
-  content: "";
-  position: absolute;
-  width: 100%;
-  height: 1px;
-  background: rgb(209, 209, 209);
-  top: 0;
+  border-top: 1px solid rgb(209, 209, 209);
 }
 main .section2 span {
   display: block;
@@ -243,22 +238,33 @@ main .section2 h3 {
 main .section2 img {
   margin: 25px 0 35px;
 }
+main .section2 p {
+  line-height: 30px;
+  font-size: 0.8rem;
+  text-align: left;
+}
 main .section2 .btn {
   margin: 30px 0 50px;
 }
 main .section2 .left-part {
   padding: 0 5%;
   position: relative;
-}
-main .section2 .left-part::before {
-  content: "";
-  position: absolute;
-  border-right: 1px;
-  background: red;
-  top: 0;
-  bottom: 0;
-  right: 50%;
+  border-right: 1px solid rgb(209, 209, 209);
 }
 main .section2 .right-part {
   padding: 0 5%;
+}
+
+footer {
+  width: 85%;
+  height: 50vh;
+  background: rgb(243, 243, 243);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+footer form {
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
 }/*# sourceMappingURL=index.css.map */

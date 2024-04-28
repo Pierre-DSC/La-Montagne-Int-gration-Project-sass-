@@ -38,6 +38,7 @@ header {
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
   }
   nav {
@@ -57,10 +58,10 @@ header {
       align-items: center;
     }
     .nav-left {
-        &:hover li:not(:hover){
-            background: none;
-            color: $white1
-        }
+      &:hover li:not(:hover) {
+        background: none;
+        color: $white1;
+      }
       li {
         @include title;
         font-size: 0.7rem;
@@ -80,22 +81,22 @@ header {
         }
       }
     }
-    .nav-right{
-        font-size: 1.1rem;
-        min-width: 100px;
-        width: 25%;
-        max-width: 300px;
-        justify-content: space-around;
-        margin-right: 10px;
+    .nav-right {
+      font-size: 1.1rem;
+      min-width: 100px;
+      width: 25%;
+      max-width: 300px;
+      justify-content: space-around;
+      margin-right: 10px;
 
-        li{
-            transition: 0.15s;
-            cursor: pointer;
+      li {
+        transition: 0.15s;
+        cursor: pointer;
 
-            &:hover {
-                transform: scale(1.3);
-            }
+        &:hover {
+          transform: scale(1.3);
         }
+      }
     }
   }
 }

@@ -1,0 +1,14 @@
+footer{
+    width: 85%;
+    height: 50vh;
+    background: $white1;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 50% 50%;
+
+    form{
+        padding: 10%;
+        display: flex;
+        flex-direction: column;
+    }
+}
