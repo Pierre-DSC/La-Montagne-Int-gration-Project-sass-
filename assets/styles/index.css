@@ -257,14 +257,78 @@ main .section2 .right-part {
 
 footer {
   width: 85%;
-  height: 50vh;
+  min-height: 65vh;
   background: rgb(243, 243, 243);
   margin: 0 auto;
   display: grid;
   grid-template-columns: 50% 50%;
+  padding-top: 50px;
 }
 footer form {
-  padding: 10%;
+  display: grid;
+  gap: 18px;
+  grid-template-rows: 18px 45px 18px 45px 18px 200px 1fr;
+  padding: 50px;
+  padding: 0 5%;
+  border-right: 1px solid rgb(209, 209, 209);
+}
+footer form label {
+  font-family: interBold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.7rem;
   display: flex;
-  flex-direction: column;
+  align-items: flex-end;
+  color: rgb(105, 105, 105);
+}
+footer form input[type=text], footer form textarea {
+  background: none;
+  border: 1px solid rgb(209, 209, 209);
+  border-radius: 5px;
+  resize: none;
+}
+footer form .btn {
+  display: flex;
+  align-items: flex-end;
+  color: rgb(105, 105, 105);
+  border: 2px solid rgb(209, 209, 209);
+}
+footer .infos-contact {
+  display: grid;
+  grid-template-rows: repeat(4, 1fr);
+}
+footer .infos-contact h3 {
+  font-family: interBold, sans-serif;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  color: rgb(105, 105, 105);
+  text-align: left;
+  padding-left: 40px;
+}
+footer .infos-contact p {
+  font-size: 0.8rem;
+  color: rgb(105, 105, 105);
+  line-height: 26px;
+  text-align: left;
+}
+footer .infos-contact div {
+  border-bottom: 1px solid rgb(209, 209, 209);
+  display: grid;
+  grid-template-columns: 25% 75%;
+  align-items: center;
+}
+footer .infos-contact .social ul {
+  display: flex;
+}
+footer .infos-contact .social li {
+  border-radius: 1px solid rgb(209, 209, 209);
+  border-radius: 150px;
+  height: 40px;
+  width: 40px;
+  font-size: 0.9rem;
+  margin-right: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }/*# sourceMappingURL=index.css.map */
