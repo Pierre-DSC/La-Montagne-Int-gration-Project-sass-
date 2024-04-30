@@ -93,6 +93,11 @@ header .header-content h1 {
   font-size: 4rem;
   letter-spacing: 6px;
 }
+@media screen and (max-width: 700px) {
+  header .header-content h1 {
+    font-size: 2rem;
+  }
+}
 header .header-content p {
   margin: 40px auto 60px;
   font-style: italic;
@@ -140,6 +145,11 @@ header nav .nav-left li {
   align-items: center;
   cursor: pointer;
 }
+@media screen and (max-width: 700px) {
+  header nav .nav-left li {
+    font-size: 0.5rem;
+  }
+}
 header nav .nav-left li:first-child {
   background: rgb(243, 243, 243);
   color: rgb(17, 17, 17);
@@ -155,6 +165,11 @@ header nav .nav-right {
   max-width: 300px;
   justify-content: space-around;
   margin-right: 10px;
+}
+@media screen and (max-width: 700px) {
+  header nav .nav-right {
+    display: none;
+  }
 }
 header nav .nav-right li {
   transition: 0.15s;
@@ -212,6 +227,11 @@ main .section1 h2 {
   text-transform: uppercase;
   font-size: 3rem;
 }
+@media screen and (max-width: 700px) {
+  main .section1 h2 {
+    font-size: 1.5rem;
+  }
+}
 main .section1 p {
   padding: 35px;
   line-height: 40px;
@@ -224,6 +244,11 @@ main .section2 {
   display: flex;
   position: relative;
   border-top: 1px solid rgb(209, 209, 209);
+}
+@media screen and (max-width: 700px) {
+  main .section2 {
+    display: block;
+  }
 }
 main .section2 span {
   display: block;
@@ -263,6 +288,11 @@ footer {
   display: grid;
   grid-template-columns: 50% 50%;
   padding-top: 50px;
+}
+@media screen and (max-width: 700px) {
+  footer {
+    grid-template-columns: 1fr;
+  }
 }
 footer form {
   display: grid;
@@ -318,6 +348,11 @@ footer .infos-contact div {
   grid-template-columns: 25% 75%;
   align-items: center;
 }
+@media screen and (max-width: 700px) {
+  footer .infos-contact div {
+    grid-template-columns: 45% 55%;
+  }
+}
 footer .infos-contact .social ul {
   display: flex;
 }
@@ -331,4 +366,5 @@ footer .infos-contact .social li {
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }/*# sourceMappingURL=index.css.map */
